@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace MinhasTarefasAPI.Models
 {
-    public class UsuarioDTO
+    public class UserDTO
     {
         [Required]
-        public string Nome { get; set; }
+        public string Name { get; set; }
         [Required]
         [EmailAddress]
         public string Email { get; set; }
         [Required]
 
-        public string Senha { get; set; }
+        public string Password { get; set; }
         [Required]
-        [Compare("Senha")]
-        public string ConfirmacaoSenha { get; set; }
+        [Compare("Password")]
+        public string ConfirmPassword { get; set; }
     }
 }
